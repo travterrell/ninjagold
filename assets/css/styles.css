@@ -1,0 +1,305 @@
+@media screen and (max-width: 345px) {
+	body {
+		text-align: center;
+		background-image: url("/assets/img/ninja_gold_background.jpg");
+		color: white;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center top;
+		font-size: 10px;
+	}
+}
+
+@media screen and (min-width: 346px) and (max-width: 387px) {
+	body {
+		text-align: center;
+		background-image: url("/assets/img/ninja_gold_background.jpg");
+		color: white;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center top;
+		font-size: 12px;
+	}
+}
+
+@media screen and (min-width: 388px) {
+	body {
+		text-align: center;
+		background-image: url("/assets/img/ninja_gold_background.jpg");
+		color: white;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center top;
+		font-size: 14px;
+	}
+}
+
+.row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+@media screen and (max-height: 667px) {
+	.container {
+		/*border: 2px solid yellow;*/
+		height: 100vh;
+		width: 100vw;
+		padding-top: 5vh;
+	}
+}
+
+@media screen and (min-height: 668px) {
+	.container {
+		/*border: 2px solid yellow;*/
+		height: 100vh;
+		width: 100vw;
+		padding-top: 10vh;
+	}
+}
+
+#top_row {
+	/*border: 2px solid white;*/
+}
+
+	#ninja_gold_title {
+		width: 70%;
+		min-width: 260px;
+	}
+
+	@media screen and (max-width: 320px) {
+		#activities {
+			position: relative;
+		    margin: -20px 0 -10px;
+		    font-size: 13px;
+		    /*border: 2px solid red;*/
+		}
+	}
+
+	@media screen and (min-width: 321px) and (max-width: 360px) {
+		#activities {
+			position: relative;
+		    margin: -20px 0 -10px;
+		    font-size: 15px;
+		    /*border: 2px solid red;*/
+		}
+	}
+
+	@media screen and (min-width: 361px) and (max-width: 414px) {
+		#activities {
+			position: relative;
+		    margin: -20px 0 -10px;
+		    font-size: 16px;
+		    /*border: 2px solid red;*/
+		}
+	}
+
+	@media screen and (min-width: 415px) and (max-width: 600px) {
+		#activities {
+			position: relative;
+		    margin: -20px 0 -10px;
+		    font-size: 16px;
+		    /*border: 2px solid red;*/
+		}
+	}
+
+	@media screen and (min-width: 601px) and (max-width: 991px) {
+		#activities {
+			position: relative;
+		    margin: -35px 0 -10px;
+		    font-size: 25px;
+		    /*border: 2px solid red;*/
+		}
+	}
+
+	@media screen and (min-width: 992px) {
+		#activities {
+			position: relative;
+		    margin-top: -60px;
+		    margin-bottom: 10px;
+		    font-size: 25px;
+		    /*border: 2px solid red;*/
+		}
+	}
+
+		.win {
+			color: #42ff00;
+		}
+
+		.loss {
+			color: red;
+		}
+
+	#gold {
+		position: relative;
+	}
+
+.find_column {
+	/*border: 2px solid red;*/
+	height: 200px;
+}
+
+@media screen and (max-width: 360px) {
+	button {
+	  display: inline-block;
+	  -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 40px;
+    /* width: 30px; */
+    position: relative;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    padding: 0px 5px;
+    border: 0 none #a58a00;
+    border-bottom: 4px solid #a58a00;
+    -webkit-border-radius: 7px 7px 9px 9px;
+    border-radius: 7px 7px 9px 9px;
+    /* font-size: 40px; */
+    font: normal normal bold 18px/40px "Averia Sans Libre", Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-transform: uppercase;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    white-space: nowrap;
+    background: -webkit-linear-gradient(-90deg, #fff2c6 0, #fff2c6 0, #ffc700 100%, #ffc700 100%), rgb(253, 218, 134);
+    background: -moz-linear-gradient(180deg, #fff2c6 0, #fff2c6 0, #ffc700 100%, #ffc700 100%), rgb(253, 218, 134);
+    background: linear-gradient(180deg, #fff2c6 0, #fff2c6 0, #ffc700 100%, #ffc700 100%), rgb(253, 218, 134);
+    -webkit-background-origin: padding-box;
+    background-origin: padding-box;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-background-size: auto auto;
+    background-size: auto auto;
+    -webkit-box-shadow: 0 -1px 1px 0 rgba(255,255,255,0.701961) inset, 0 1px 1px 0 rgb(177,106,2);
+    box-shadow: 0 -1px 1px 0 rgba(255,255,255,0.701961) inset, 0 1px 1px 0 rgb(177,106,2);
+    text-shadow: 0 1px 1px rgba(0,0,0,0.498039);
+	}
+}
+
+@media screen and (min-width: 361px) {
+	button {
+	  display: inline-block;
+	  -webkit-box-sizing: border-box;
+	  -moz-box-sizing: border-box;
+	  box-sizing: border-box;
+	  height: 64px;
+	  /*width: 30px;*/
+	  position: relative;
+	  cursor: pointer;
+	  top: 0;
+	  left: 0;
+	  padding: 0px 6px;
+	  border: 0 none #a58a00;
+	  border-bottom: 4px solid #a58a00;
+	  -webkit-border-radius: 7px 7px 9px 9px;
+	  border-radius: 7px 7px 9px 9px;
+	  /*font-size: 40px;*/
+	  font: normal normal bold 24px/40px "Averia Sans Libre", Helvetica, sans-serif;
+	  color: rgb(255, 255, 255);
+	  text-align: center;
+	  text-transform: uppercase;
+	  -o-text-overflow: clip;
+	  text-overflow: clip;
+	  white-space: nowrap;
+	  background: -webkit-linear-gradient(-90deg, #fff2c6 0, #fff2c6 0, #ffc700 100%, #ffc700 100%), rgb(253, 218, 134);
+	  background: -moz-linear-gradient(180deg, #fff2c6 0, #fff2c6 0, #ffc700 100%, #ffc700 100%), rgb(253, 218, 134);
+	  background: linear-gradient(180deg, #fff2c6 0, #fff2c6 0, #ffc700 100%, #ffc700 100%), rgb(253, 218, 134);
+	  -webkit-background-origin: padding-box;
+	  background-origin: padding-box;
+	  -webkit-background-clip: border-box;
+	  background-clip: border-box;
+	  -webkit-background-size: auto auto;
+	  background-size: auto auto;
+	  -webkit-box-shadow: 0 -1px 1px 0 rgba(255,255,255,0.701961) inset, 0 1px 1px 0 rgb(177,106,2) ;
+	  box-shadow: 0 -1px 1px 0 rgba(255,255,255,0.701961) inset, 0 1px 1px 0 rgb(177,106,2) ;
+	  text-shadow: 0 1px 1px rgba(0,0,0,0.498039) ;
+	}
+}
+
+	button:hover {
+	  border: 0 none rgb(177,106,2);
+	  border-bottom: 4px solid rgb(177,106,2);
+	  background: #ffc700;
+	  -webkit-transition: all 30ms cubic-bezier(0.42, 0, 0.58, 1);
+	  -moz-transition: all 30ms cubic-bezier(0.42, 0, 0.58, 1);
+	  -o-transition: all 30ms cubic-bezier(0.42, 0, 0.58, 1);
+	  transition: all 30ms cubic-bezier(0.42, 0, 0.58, 1);
+	}
+
+	@media screen and (max-width: 360px) {
+		button:active {
+		  height: 36px;
+		  margin: 4px 0 0;
+		  border: none;
+		  -webkit-border-radius: 7px;
+		  border-radius: 7px;
+		  background: -webkit-linear-gradient(-90deg, #fff2c6 0, #fff2c6 0, #ffc700 100%, #ffc700 100%), rgb(253, 218, 134);
+		  background: -moz-linear-gradient(180deg, #fff2c6 0, #fff2c6 0, #ffc700 100%, #ffc700 100%), rgb(253, 218, 134);
+		  background: linear-gradient(180deg, #fff2c6 0, #fff2c6 0, #ffc700 100%, #ffc700 100%), rgb(253, 218, 134);
+		  -webkit-background-origin: padding-box;
+		  background-origin: padding-box;
+		  -webkit-background-clip: border-box;
+		  background-clip: border-box;
+		  -webkit-background-size: auto auto;
+		  background-size: auto auto;
+		  -webkit-transition: all 30ms cubic-bezier(0.42, 0, 0.58, 1);
+		  -moz-transition: all 30ms cubic-bezier(0.42, 0, 0.58, 1);
+		  -o-transition: all 30ms cubic-bezier(0.42, 0, 0.58, 1);
+		  transition: all 30ms cubic-bezier(0.42, 0, 0.58, 1);
+		 }
+	}
+
+	@media screen and (min-width: 361px) {
+		button:active {
+		  height: 60px;
+		  margin: 4px 0 0;
+		  border: none;
+		  -webkit-border-radius: 7px;
+		  border-radius: 7px;
+		  background: -webkit-linear-gradient(-90deg, #fff2c6 0, #fff2c6 0, #ffc700 100%, #ffc700 100%), rgb(253, 218, 134);
+		  background: -moz-linear-gradient(180deg, #fff2c6 0, #fff2c6 0, #ffc700 100%, #ffc700 100%), rgb(253, 218, 134);
+		  background: linear-gradient(180deg, #fff2c6 0, #fff2c6 0, #ffc700 100%, #ffc700 100%), rgb(253, 218, 134);
+		  -webkit-background-origin: padding-box;
+		  background-origin: padding-box;
+		  -webkit-background-clip: border-box;
+		  background-clip: border-box;
+		  -webkit-background-size: auto auto;
+		  background-size: auto auto;
+		  -webkit-transition: all 30ms cubic-bezier(0.42, 0, 0.58, 1);
+		  -moz-transition: all 30ms cubic-bezier(0.42, 0, 0.58, 1);
+		  -o-transition: all 30ms cubic-bezier(0.42, 0, 0.58, 1);
+		  transition: all 30ms cubic-bezier(0.42, 0, 0.58, 1);
+		 }
+	}
+
+@media screen and (max-width: 480px) {
+	h1 {
+		font-size: 30px;
+	}
+
+	h2 {
+		font-size: 23px;
+	}
+}
+
+h2 {
+	margin: 0px auto;
+}
+
+.top_location_row {
+	margin-bottom: 20px;
+}
+
+@media screen and (max-height: 480px) {
+	.music_fx_row {
+		margin-top: 25px;
+	}
+}
+
+@media screen and (min-height: 481px) {
+	.music_fx_row {
+		margin-top: 50px;
+	}
+}
