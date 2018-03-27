@@ -1,26 +1,10 @@
 $(document).ready(function () {
 
-	// Basepath for links will either be "https://www.travterrell.com/ninjagold" or "http://localhost:8888/ (<-localhost port address may change)"
-	var basePath = "http://localhost:8888/";
-
-	// This adds a date string to each image to make sure that the images are not cached to keep loading fade animation consistent
-	$('img').each(function(){
-      var date = new Date;
-      // add the current unix timestamp in microseconds to the the image src as a query string
-      this.src = this.src + '?' + date.getTime();
-   	});
-
-    $('#ninja_gold_title').bind('load', function(){ // image ready
-    	// alert("Image loaded");
-    	$("#fadebg").css({"opacity": "0"});
-		setTimeout(function(){ 
-			$("#fadebg").css({"z-index": "-1"});
-		}, 300);
-    });
+	// alert("ninja_gold.js working!");
 
 	function updateActivityMessage() {
 		$.ajax({
-    		url: basePath + "/ninjas/activity", 
+    		url: "http://34.208.174.131/Ninjas/activity", 
     		success: function(result){
 	        	$("#activities").html(result);
 	    	}
@@ -29,7 +13,7 @@ $(document).ready(function () {
 
 	function updateActivityClass() {
 		$.ajax({
-    		url: basePath + "/ninjas/activity_class", 
+    		url: "http://34.208.174.131/Ninjas/activity_class", 
     		success: function(result){
 	        	$('#activities').removeClass();
 				$('#activities').addClass(result);
@@ -40,7 +24,7 @@ $(document).ready(function () {
 	$("#farm").click(function(){
     	
     	$.ajax({
-    		url: basePath + "/ninjas/farm", 
+    		url: "http://34.208.174.131/farm", 
     		success: function(result){
 	        	updateActivityClass();
 				updateActivityMessage();
@@ -54,7 +38,7 @@ $(document).ready(function () {
 	$("#cave").click(function(){
     	
     	$.ajax({
-    		url: basePath + "/ninjas/cave", 
+    		url: "http://34.208.174.131/Ninjas/cave", 
     		success: function(result){
 	        	updateActivityClass();
 				updateActivityMessage();
@@ -68,7 +52,7 @@ $(document).ready(function () {
 	$("#house").click(function(){
     	
     	$.ajax({
-    		url: basePath + "/ninjas/house", 
+    		url: "http://34.208.174.131/Ninjas/house", 
     		success: function(result){
     			updateActivityClass();
 				updateActivityMessage();
@@ -82,7 +66,7 @@ $(document).ready(function () {
 	$("#casino").click(function(){
     	
     	$.ajax({
-    		url: basePath + "/ninjas/casino", 
+    		url: "http://34.208.174.131/Ninjas/casino", 
     		success: function(result){
     			var goldH1 = document.querySelector("#gold").textContent;
     			var previousGold = Number(goldH1.substring(6, (goldH1.length)));
@@ -103,7 +87,6 @@ $(document).ready(function () {
 
 	var music = document.getElementById("music");
 	var playing = true;
-	// music.pause();
 	$("#music_button").click(function(){
 		if (playing == true) {
 			music.pause();
@@ -127,17 +110,6 @@ $(document).ready(function () {
 			$("#fx_button").html("Stop FX");
 		}
 	}
-
-	// Workaround when music doesn't autoplay on mobile. Sets music button to 'Play Music' and hides fx button.
-	setTimeout(function(){
-		if (music.paused == true) {
-			playing = false;
-			music.currentTime = 0;
-			$("#music_button").html("Play Music");
-			toggleFX();
-			$("#fx_button").hide();
-		}
-	}, 500);
 
 	$("#fx_button").click(function(){
 		toggleFX();

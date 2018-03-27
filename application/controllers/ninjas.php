@@ -21,7 +21,7 @@ class Ninjas extends CI_Controller {
 		$running_total = $this->session->userdata('gold');
 		$running_total += $gold;
 		$this->session->set_userdata('gold', $running_total);
-		echo "Gold: " + $this->session->userdata('gold');
+		echo $this->session->userdata('gold');
 	}
 
 	public function cave()
@@ -32,7 +32,7 @@ class Ninjas extends CI_Controller {
 		$running_total = $this->session->userdata('gold');
 		$running_total += $gold;
 		$this->session->set_userdata('gold', $running_total);
-		echo "Gold: " + $this->session->userdata('gold');
+		echo $this->session->userdata('gold');
 	}
 
 	public function house()
@@ -43,7 +43,7 @@ class Ninjas extends CI_Controller {
 		$running_total = $this->session->userdata('gold');
 		$running_total += $gold;
 		$this->session->set_userdata('gold', $running_total);
-		echo "Gold: " + $this->session->userdata('gold');
+		echo $this->session->userdata('gold');
 	}
 
 	public function casino()
@@ -60,7 +60,7 @@ class Ninjas extends CI_Controller {
 		$running_total = $this->session->userdata('gold');
 		$running_total += $gold;
 		$this->session->set_userdata('gold', $running_total);
-		echo "Gold: " + $this->session->userdata('gold');
+		echo $this->session->userdata('gold');
 	}
 
 	public function activity()

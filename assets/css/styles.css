@@ -1,7 +1,20 @@
+#fadebg {
+  width: 10000px;
+  height: 10000px;
+  z-index: 1;
+  position: fixed;
+  background-color: black;
+  margin-left: -1000px;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
 @media screen and (max-width: 345px) {
 	body {
 		text-align: center;
-		background-image: url("/assets/img/ninja_gold_background.jpg");
+		background-image: url("../img/ninja_gold_bg.jpg");
 		color: white;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -13,7 +26,7 @@
 @media screen and (min-width: 346px) and (max-width: 387px) {
 	body {
 		text-align: center;
-		background-image: url("/assets/img/ninja_gold_background.jpg");
+		background-image: url("../img/ninja_gold_bg.jpg");
 		color: white;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -25,7 +38,7 @@
 @media screen and (min-width: 388px) {
 	body {
 		text-align: center;
-		background-image: url("/assets/img/ninja_gold_background.jpg");
+		background-image: url("../img/ninja_gold_bg.jpg");
 		color: white;
 		background-size: cover;
 		background-repeat: no-repeat;

@@ -4,12 +4,19 @@
         <meta charset="utf-8">
         <title>Ninja Gold</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta Http-Equiv="Pragma" Content="no-cache">
+        <meta Http-Equiv="Expires" Content="0">
+        <meta Http-Equiv="Pragma-directive: no-cache">
+        <meta Http-Equiv="Cache-directive: no-cache">
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
-        <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
     </head>
     <body>
+
+        <div id="fadebg"></div>
 
         <div class="container">
 
@@ -30,7 +37,7 @@
 
             <div class="row" id="top_row">
                 <div class="col-xs-12">
-                    <img id="ninja_gold_title" src="/assets/img/ninja_gold_title.png" alt="Ninja Gold">
+                    <img id="ninja_gold_title" src="assets/img/ninja_gold_title.png" alt="Ninja Gold">
                     <p id="activities" class="<?= $this->session->userdata('activities')[1] ?>"><?= $this->session->userdata('activities')[0] ?></p>
                     <h1 id="gold">Gold: <?= $this->session->userdata('gold') ?></h1>
                 </div>
